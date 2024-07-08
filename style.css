@@ -45,13 +45,17 @@ section {
   gap: 26px;
   background: linear-gradient(to right, #fbeee6, #fff,#fbeee6);
 }
+strong{
+  margin-top: 3px;
+  height: 5px;
+}
 marquee{
   display: none;
 }
 .radial {
   display: flex;
   gap: 25px;
-  padding: 10px;
+  padding: 30px;
 }
 .radial li {
   font-size: 15px;
@@ -115,7 +119,7 @@ nav li:hover .lien-sous {
 
 .navbar {
   width: 100%;
-  padding: 1rem 4%;
+  padding: 1.5rem 4%;
   box-shadow: 0px 4px 40px 0px #33333314;
   background-color: #ffff;
   display: flex;
