@@ -7,11 +7,14 @@
 /* --Bloog--- */
 
 .blog{
+  position: relative;
+  top: 13rem;
     max-width: 650px;
     /* width: 60%; */
     margin: auto;
     /* background-color: aqua; */
     padding: 15px;
+    margin-bottom: 13rem;
   }
   
   .blog .link{
@@ -38,9 +41,10 @@
 
   .link li a{
     color: orange;
+    text-decoration: underline;
   }
   
-  ul li i{
+  .link ul li i{
     /* padding: 5px; */
     /* background-color: aqua; */
     margin-left: 0.5rem;
@@ -91,7 +95,7 @@
   
   .blog-content .blog-image{
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     background-color: darkgray;
     margin-bottom: 15px;
     position: relative;
@@ -108,7 +112,7 @@
     margin-bottom: 10px;
     width: 100%;
     font-family: JetBrains Mono,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
   
   .blog-content p{
@@ -143,8 +147,8 @@
     font-size: 14px;
   }
   
-  .blog-container .btn{
-    font-size: 1.2rem;
+  .blog-container .btn-voir{
+    font-size: 2rem;
     font-weight: 600;
     /* font-family: JetBrains Mono, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji"; */
     font-family: Outfit,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
@@ -152,7 +156,7 @@
     text-align: center;
   }
   
-  .blog-container .btn:hover{
+  .blog-container .btn-voir:hover{
     text-decoration: underline;
   }
   
@@ -190,6 +194,7 @@
 
   .link-2 ul li a{
     color: orange;
+    text-decoration: underline;
   }
   
   .link-2 ul .text-over{
@@ -260,7 +265,7 @@
   
   .content-entete h1{
     margin-top: 15px;
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     font-weight: 900;
     font-family: JetBrains Mono,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
   }
@@ -277,12 +282,12 @@
   }
   
   .liste h3{
-    font-size: 1.2rem;
+    font-size: 2.2rem;
   }
   
   .liste ol{
-    margin-left: 2rem;
-    line-height: 2.7rem;
+    margin-left: 2.8rem;
+    line-height: 3.7rem;
     font-weight: 500;
   }
   
@@ -304,23 +309,23 @@
   
   .content-details h2{
     margin: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
   
   .content-details p{
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
     margin: 1rem 0;
   }
   
   .content-details ol li{
     margin-left: 2rem;
-    font-size: 1rem;
+    font-size: 1.8rem;
     color: grey;
   }
   
   .content-details ol h5{
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     margin: 1rem 0;
   }
   
@@ -402,13 +407,13 @@
   
   .profil-detail h4{
     margin: 5px 0;
-    font-size: 1rem;
+    font-size: 1.8rem;
     font-weight: 600;
     font-family: JetBrains Mono,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
   }
   
   .profil-detail p{
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     font-weight: 400;
   }
   
