@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet">
+    <title>Développement avec Django : Utilisation de l'ORM vs Utilisation sans ORM</title>
+</head>
+<body>
+
+    <section class="blog">
+        <div class="link-2">
+            <ul>
+                <li><a href="../index.html">Accueil</a> <i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href="../blog.html">Articles</a> <i class="fa-solid fa-chevron-right"></i></li>
+                <li class="text-over">Développement avec Django : Utilisation de l'ORM vs Utilisation sans ORM</li>
+            </ul>
+        </div>
+        <div class="blog-container-2">
+            <div class="content-entete">
+                <div class="image">
+                    <img src="../image/Blog/Blog image/django-orm-inspector-1024x447.png" alt="">
+                </div>
+                <a href="">Django</a>
+                <h1>Développement avec Django : Utilisation de l'ORM vs Utilisation sans ORM</h1>
+                <p>01 juil. 2024</p>
+
+                <div class="liste">
+                    <h3>Table des matières:</h3>
+                    <ol>
+                        <li>l’utilisation de Django sans ORM</li>
+                        <li>l’utilisation de Django ORM</li>
+                        <li>CONCLUSION</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="content-details">
+                <ol>
+                    <h2>l’utilisation de Django sans ORM</h2>
+                    <p>Sans l’utilisation de l’ORM (Object-Relational Mapping), Django serait une structure de développement web qui nécessiterait l’écriture directe de requêtes SQL pour interagir avec la base de données. Cela signifie que chaque interaction avec la base de données nécessiterait la création manuelle de requêtes SQL, l’exécution de ces requêtes, la gestion des résultats et la transformation des données récupérées en objets Python utilisables dans l’application.</p>
+                    <li>Voici comment Django ressemblerait sans l’utilisation de l’ORM :</li>
+                    <h5>Structure de code</h5>
+                    <ul>
+                        <li>Définition des Modèles : Sans ORM, les modèles de données ne seraient pas des classes Python étendant django.db.models.Model. Au lieu de cela, les tables de base de données devraient être créées manuellement avec du SQL pur, et chaque interaction avec ces tables nécessiterait l’utilisation de requêtes SQL directes dans le code.</li>
+                        <p>Exemple de définition de modèle sans ORM :</p>
+                        <div class="image-exemple">
+                            <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                        </div>
+                        <li>Définition des Modèles : Sans ORM, les modèles de données ne seraient pas des classes Python étendant django.db.models.Model. Au lieu de cela, les tables de base de données devraient être créées manuellement avec du SQL pur, et chaque interaction avec ces tables nécessiterait l’utilisation de requêtes SQL directes dans le code.</li>
+                        <p>Exemple de définition de modèle sans ORM :</p>
+                        <div class="image-exemple">
+                            <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                        </div>
+                        <p>Difficultés et Limitations Complexité et Maintenance : Écrire du SQL directement dans le code augmente la complexité et rend le code plus difficile à maintenir. Les développeurs doivent gérer manuellement les détails de la syntaxe SQL et s’assurer que les requêtes sont correctement formées.</p>
+                        <p>Portabilité : L’utilisation directe de SQL rendrait l’application moins portable entre différents systèmes de gestion de base de données, car chaque système a sa propre syntaxe SQL et ses particularités.</p>
+                        <p>Sécurité : Sans l’abstraction fournie par l’ORM, les développeurs doivent être très prudents pour éviter les failles de sécurité comme les injections SQL, en validant et en échappant correctement les données utilisateur.</p>
+                    </ul>
+                    <h2>l’utilisation de Django ORM</h2>
+                    <li>Voici comment Django ressemblerait avec l’utilisation d’ORM :</li>
+                    <p>L’ORM Django simplifie la manipulation des données en permettant aux développeurs d’interagir avec la base de données à l’aide d’objets Python et de méthodes de requête abstraites. Voici comment vous pourriez définir des modèles et interagir avec la base de données en utilisant l’ORM Django :</p>
+                    <p>Définition des Modèles Les modèles Django sont des classes Python qui définissent la structure des données de votre application. Chaque attribut de classe correspond à un champ de base de données, facilitant ainsi la création, la lecture, la mise à jour et la suppression des données.</p>
+                    <div class="image-exemple">
+                        <img src="../image/Blog/Blog interne/Capture d'écran 2024-07-06 173517.png" alt="">
+                    </div>
+                    <p>Avantages de l’ORM : L’ORM de Django facilite l’interaction avec la base de données en utilisant des classes Python pour représenter des tables de base de données, des objets pour représenter des lignes de table, et des méthodes pour effectuer des opérations CRUD (Create, Read, Update, Delete).</p>
+                    <p>Structure des requêtes : Django fournit une API riche pour structurer les requêtes en utilisant des méthodes de gestion de requêtes telles que .filter(), .exclude(), .annotate(), etc.</p>
+                    <p>Optimisation des requêtes : Utilisez des techniques comme select_related(), prefetch_related(), only(), defer() pour optimiser les performances des requêtes en minimisant le nombre de requêtes SQL générées et en limitant les données récupérées.</p>
+                </ol>
+                <h2>CONCLUSION</h2>
+                <p>L’utilisation de l’ORM Django simplifie considérablement le développement en automatisant la génération de requêtes SQL, en offrant une interface orientée objet intuitive, et en facilitant la gestion des relations entre les modèles. Cependant, elle peut ajouter une légère surcharge de performance par rapport à l’écriture directe de SQL, surtout pour des opérations simples et directes.</p>
+                <p>En revanche, l’écriture directe de requêtes SQL offre plus de contrôle sur les détails d’implémentation et peut être plus performante dans certains cas spécifiques, mais elle nécessite une expertise SQL avancée et peut rendre le code plus difficile à maintenir.</p>
+            </div>
+            <div class="profil">
+                <div class="profil-image">
+                    <img src="../image/Blog/profil/01HXD3V3XQWHGNXJBV3VKH7WYF.png" alt="">
+                </div>
+                <div class="profil-detail">
+                    <h4>Sokhna Fatou Gueye</h4>
+                    <p>Coach à Bakeli School of Technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
