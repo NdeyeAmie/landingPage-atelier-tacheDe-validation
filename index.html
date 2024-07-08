@@ -4,16 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bakeli School</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
+    <title>Accueil | Bakeli School of Technologie</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/your-kit-id.css">
@@ -21,12 +15,19 @@
   <body>
     <header class="header">
       <div class="heading">
-        <h2>Rentrée du 09 Juillet</h2>
+        <h2 style="font-weight: 700;line-height: 24px;font-size: 16px;color: rgb(0, 0, 0);">Rentrée du 09 Juillet</h2>
         <ul class="radial">
           <li>Inscription en cours jusqu'au 19 Juillet 2024</li>
-          <li>nombre de place ilimitees</li>
+          <li class="noneli">nombre de place limitees</li>
         </ul>
       </div>
+      <marquee class="heading2">
+        <h2>Rentrée du 09 Juillet</h2>
+        <ul class="radial2">
+          <li>Inscription en cours jusqu'au 19 Juillet 2024</li>
+          <li class="noneli2">nombre de place limitees</li>
+        </ul>
+      </marquee>
       <nav class="navbar">
       <div class="logo">
         <a href="#" ><img src="logo.png" alt="image"></a>
@@ -37,36 +38,28 @@
             <a href="#investment" class="active">Accueil</a>
           
             <a href="">
-            <li class="list">
-              <a href="#">Formation
+            <li class="list" style="list-style: none;">
+              <a href="formations-certifiantes.html">Formation
                 <select><option value="#"></option></select></a>
               <ul class="lien-sous">
                 <div class="sous1">
-                <li><a href="#" class="black" style="font-weight: 700;">Disigner search</a>
+                <li style="list-style: none;"><a href="#" class="black" style="font-weight: 700;line-height: 24px;font-size: 16px; color: rgb(0, 0, 0);">Disigner search</a>
                 <p>En ligne et en presentiel</p>
                 </li>
               </div>
               <div class="sous2">
-                <li><a href="#" class="black-sous" style="font-weight: 700;">Quickly find your next designer</a>
+                <li style="list-style: none;"><a href="#formations-certifiantes" class="black-sous" style="font-weight: 700;line-height: 22px;font-size: 14px;color: rgb(0, 0, 0);">Quickly find your next designer</a>
                   <p>Explorez de nouvelles opportunités</p>
                   <p>professionnelles avec nos formation...</p>
                 </li>
                 
-                <li><a href="#" class="black-sous" style="font-weight: 700;">Formation diplomantes</a>
+                <li style="list-style: none;"><a href="#" class="black-sous" style="font-weight: 700;line-height: 22px;font-size: 14px;color: rgb(0, 0, 0);">Formation diplomantes</a>
                 <p>Votre avenir academic commence </p>
               <P>ici!!! Embarquer pour un voyage...</P></li>
               </div>
               </ul>
             </li>
           </a>
-
-            <!-- <a href="#works">
-              <select>formation
-                <option value="option1">Formation</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-              </select>
-            </a> -->
          <a href="#about">Coachs</a>
          <a href="#about">Evénements</a>
          <a href="#about">Blogs</a>
@@ -203,7 +196,7 @@
 <section class="entreprise" id="entreprise">
     <div class="heading-ent">
         <h1>Ces entreprises recrutent chez nous.</h1>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
     </div>
 </section>
 
@@ -313,16 +306,17 @@
     <div class="text-beliste">
       <p>Ma formation chez Bakeli School of Technology m'a aidé à développer mes compétences techniques. Au-delà de la formation qui est 100% pratique
         , j'ai pu bénéficier d'un accompagnement en développement personnel qui m'a permis de pouvoir m'insérer professionnellement.</p>
-        <hr>
+        <div class="hr2"></div>
         <div class="txt-flex">
           <div class="flex1">
         <h3>Mountaga Diao Leye DIOP</h3>
-        <img src="image/coach.jpg" alt="" style="width: 10%;">
+        <h4>Développement Web</h4>
+      </div>
+      <div class="flex2">
+        <img src="image/coach.jpg" alt="" style="width: 25%;">
       </div>
       </div>
-      <div class="flex1">
-        <h4>Maketing Digitale</h4>
-      </div>
+      
     </div>
   </div>
 </section>
@@ -330,12 +324,17 @@
 <section class="aventure">
     <div class="url-image">
         <h2>Cours en ligne et en présentiel
-     <br>
+     
             Prêt à rejoindre l'aventure ?
-            <br>
+            
             Inscrivez-vous dès aujourd'hui.</h2>
             <div class="btn-aven">
                 <button>Nous rejoindre</button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                 class="size-5" style="width: 7%;">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+
             </div>
     </div>
 </section>
@@ -354,27 +353,54 @@
             
         </div>
     </div>
+    <div class="serv-about">
     <div class="service">
-        <div class="bot">
       <h2>Bakeli</h2>
-      <p>Accueil</p>
-      <p>Nos coachs</p>
-      <p>Evénements</p>
-      <p>blog</p>
+      <div class="bot">
+      
+      <a href="">Accueil</a >
+      <a href="">Nos coachs</a >
+      <a href="">Evénements</a >
+      <a href="">blog</a >
     </div>
     </div>
    <div class="about-footer">
     <h2>Contacts</h2>
-    <p>Hlm Grand Yoff Villa N241 Pres du Terminus des bus Dakar Dem Dikk qui vont a l'AIBD</p>
+    <div>
+    <a  class="about-flex" href="https://www.google.com/maps/place/Bakeli+School+of+Technology/@14.7437573,-17.4531447,17z/data=!3m1!4b1!4m6!3m5!1s0xec10dd476fedbb1:0x4b7c559a6d1a192b!8m2!3d14.7437573!4d-17.4531447!16s%2Fg%2F11qntl5vg1?entry=ttu">
+    Hlm Grand Yoff Villa N241 Pres du Terminus des bus Dakar Dem Dikk qui vont a l'AIBD
+  </a>
+    <h4>+221 78 546 15 51</h4>
+    <h4>contact@bakeli.tech</h4>
     <!-- <h4>+221 78 546 15 51</h4> -->
-    <h3>contact@bakeli.tech</h3>
+    </div>
    </div> 
+   </div>
 
-   <div class="icon-footer">
-    <i class='bx bxs-chevron-up-circle'></i>
+   <div class="icon-footer" style="width: 26%;">
+    
+    <h2>S'ABONNER À LA NEWSLETTER</h2>
+    <form action="">
+      <div class="input-groupe">
+    <input type="email" name="email"  placeholder="Votre Email" id="email" style="width: 130%; padding: 2rem;
+    margin-top: 1.5rem; border-style: solid;
+    border-color: #e5e7eb; border-radius: 6px;">
+    <button
+     style="padding: 1.4rem; margin-top: 1.75rem; background-color: rgb(0 150 136);border-radius: 10px;
+     color: rgb(255, 255, 255); cursor: pointer; font-size: 16px; font-weight: 600;line-height: 20px;"
+     >S'inscrire</button>
+  </div>
+  </form>
+    <!-- <i class='bx bxs-chevron-up-circle'></i> -->
    </div>
   </div>
-  <div class=""></div>
+  <!-- <hr style="margin-top: -5rem;border-color: rgb(229 231 235 );"> -->
+  <div class="hr"></div>
+  <div class="Copyright">
+    <p style="text-align: center;font-size: 16px; font-weight: 400; margin-top: 2rem;
+     color: rgb(0,0,0); line-height: 24px;">© Copyright 2024, Tous droits réservés.
+    </p>
+  </div>
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
