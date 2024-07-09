@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    /* font-weight: "Nunito", sans-serif; */
+    text-decoration: none;
+    /* list-style: none; */
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-color: white;
+    color: #333333;
+    height: 100vh;
+    font-family: "Proxima Nova", sans-serif;
+  }
+  
+  :root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #128c76;
+  }
+  section {
+    width: 100%;
+  }
+
+  /* section-bannier */
+  .section-bannier{
+    width: 100%;
+    height: auto;
+   
+  }
+  .bannier-inscription img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    margin-top: 16.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    body{
+     width: 100%;
+    }
+.bannier-inscription img {
+    max-width: 100%;
+    height: auto;
+}
+}
