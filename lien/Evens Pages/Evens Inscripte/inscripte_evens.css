@@ -45,6 +45,8 @@
     text-align: center;
     font-size: 30px;
     margin-bottom: 2rem;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .compte-inscription p{
@@ -55,6 +57,9 @@
 .compte-inscription .inscripte-champ{
     padding: 15px;
     /* background-color: blueviolet; */
-    margin: 15px 0;
+    width: 350px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 196, 196);
 }
 
