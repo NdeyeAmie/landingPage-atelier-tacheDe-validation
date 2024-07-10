@@ -45,13 +45,17 @@ section {
   gap: 26px;
   background: linear-gradient(to right, #fbeee6, #fff,#fbeee6);
 }
+strong{
+  margin-top: 3px;
+  height: 5px;
+}
 marquee{
   display: none;
 }
 .radial {
   display: flex;
   gap: 25px;
-  padding: 10px;
+  padding: 20px;
 }
 .radial li {
   font-size: 15px;
@@ -67,13 +71,6 @@ marquee{
   object-fit: cover;
 }
 
-.navbar a select {
-  /* font-family: Josefin Sans;
-  font-size: 1.7rem;
-  line-height: 24px;
-  letter-spacing: 0em;
-  color: #333333; */
-}
 .lien-sous {
   width: 100%;
   display: none;
@@ -91,13 +88,13 @@ nav li:hover .lien-sous {
   align-items: center;
   gap: 27rem;
   position: absolute;
-  top: 11rem;
+  top: 13rem;
   left: 0;
   padding: 20px;
   z-index: 1000;
-  background-color: #ffffff;
+  background-color: #FFFF;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  height: 140px;
+  height: 120px;
 }
 
 .lien-sous .black {
