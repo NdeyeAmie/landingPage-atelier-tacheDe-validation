@@ -739,6 +739,9 @@ color: #0b9284;
   color: gray;
   margin-top: 2rem;
 }
+.input-groupe {
+  margin-right: 2rem;
+}
 
 .about-footer h4 {
   font-size: 16px;
@@ -805,6 +808,10 @@ color: #0b9284;
     align-items: center;
     gap: 10px;
      background: linear-gradient(to right, #fbeee6, #fff,#fbeee6);
+     overflow-x: hidden;
+  }
+  .heading2 h2{
+    display: none;
   }
  
   .radial2 {
@@ -816,7 +823,7 @@ color: #0b9284;
     font-size: 15px;
   }
   #menu-icon {
-    display: block;
+    display: none;
     justify-content: end;
   }
 
@@ -825,7 +832,7 @@ color: #0b9284;
   }
 
   .navbar .lien {
-    position: absolute;
+    /* position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
@@ -833,9 +840,24 @@ color: #0b9284;
     background: white;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    display: none;
+    display: none; */
+    
+      display: flex;
+      /* justify-content: center;
+      align-items: center; */
+      gap: 2rem;
+    width: 100%;
   }
-
+  .navbar a {
+    font-size: 16px;
+    line-height: 14px;
+    color: #333333;
+    letter-spacing: 0em;
+    transition: 0.3s;
+  }
+select{
+  display: none;
+}
   .login a button {
     display: none;
   }
